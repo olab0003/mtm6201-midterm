@@ -1,0 +1,101 @@
+/*body*/
+Body {
+    background-color:#204420;
+    /* font*/
+    font-family: 'Nunito', sans-serif;
+    color: #fff;
+}
+div{
+    padding: 1rem;/**/
+}
+.wrapper{
+    
+    font-size: larger;
+}
+/*img*/
+img{
+    max-width: 100%;
+    height: auto;
+    border: #222 solid 2px;
+}
+.fp{
+    text-align: center;
+    background-color: #c08c5c;
+}
+/*- aboutinfo -*/
+.aboutinfo{
+    background-color: #c08c5c;
+}
+/*nav*/
+ul {
+   list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+    width: 100%;
+    padding: 14px;
+}
+  /*nav home*/
+.home {
+    background-color:#c08c5c;
+}
+
+li a {
+  text-align: center;
+  display: block;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+  
+li a:hover {
+ background-color: #111;
+}
+.button{
+    /**/
+    height: auto;
+    border: 2px solid black;
+    border-radius: 5px;
+    background-color: #7c5b32;
+    color: black;
+    padding: 14px 28px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+footer{
+    background-color: #ffe6ac;
+    padding-bottom:3rem;
+    color:#222;
+}
+
+
+/*pc*/
+@media screen and (min-width:760px) {
+    .search-container a ul input[type=search]{
+        float: none;
+        display: block;
+        text-align: left;
+        width: 100%;
+        margin: 0;
+        padding: 14px;
+
+    }
+    .aboutinfo{
+        display: grid;
+        text-align: center;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "aboutus Info"
+        ;
+    }
+
+    .about us{
+        grid-area: aboutus;
+    }
+    img{
+        grid-area: Info;
+    }
+
+
+}
